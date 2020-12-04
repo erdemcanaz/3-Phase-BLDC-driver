@@ -867,7 +867,7 @@ Wire Wire Line
 	5650 1700 5650 1650
 Connection ~ 5500 1700
 Wire Wire Line
-	5650 1350 5650 1200
+	5650 1350 5650 1300
 Text GLabel 5500 1800 3    50   Input ~ 0
 COM
 Wire Wire Line
@@ -1069,4 +1069,139 @@ Text GLabel 9950 2300 2    50   Input ~ 0
 5V
 Text GLabel 9950 2400 2    50   Input ~ 0
 5V
+Text GLabel 5850 1300 2    50   Input ~ 0
+5V
+Wire Wire Line
+	5850 1300 5650 1300
+Connection ~ 5650 1300
+Wire Wire Line
+	5650 1300 5650 1200
+Text GLabel 10050 1600 2    50   Input ~ 0
+CURRENT
+Wire Wire Line
+	10050 1600 9950 1600
+Text GLabel 9950 2700 2    50   Input ~ 0
+~HINA
+Text GLabel 9950 2800 2    50   Input ~ 0
+~LINA
+Text GLabel 9950 2900 2    50   Input ~ 0
+~HINB
+Text GLabel 8500 2000 0    50   Input ~ 0
+~LINB
+Text GLabel 8500 2700 0    50   Input ~ 0
+~HINC
+Text GLabel 8500 2600 0    50   Input ~ 0
+~LINC
+$Comp
+L Device:R R15
+U 1 1 5FCFBFFB
+P 10450 2300
+F 0 "R15" H 10520 2346 50  0000 L CNN
+F 1 "400" H 10520 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_1218_3246Metric" V 10380 2300 50  0001 C CNN
+F 3 "~" H 10450 2300 50  0001 C CNN
+	1    10450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5FCFCDAE
+P 10300 2600
+F 0 "D11" H 10293 2345 50  0000 C CNN
+F 1 "LED" H 10293 2436 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 10300 2600 50  0001 C CNN
+F 3 "~" H 10300 2600 50  0001 C CNN
+	1    10300 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 2600 9950 2600
+Wire Wire Line
+	9950 2200 10300 2200
+Wire Wire Line
+	10300 2200 10300 2150
+Wire Wire Line
+	10300 2150 10450 2150
+$Comp
+L Device:LED D10
+U 1 1 5FD1DDC1
+P 10100 2500
+F 0 "D10" H 10093 2245 50  0000 C CNN
+F 1 "LED" H 10093 2336 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 10100 2500 50  0001 C CNN
+F 3 "~" H 10100 2500 50  0001 C CNN
+	1    10100 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10250 2500 10300 2500
+$Comp
+L Device:R R14
+U 1 1 5FD28729
+P 10300 2350
+F 0 "R14" H 10370 2396 50  0000 L CNN
+F 1 "400" H 10370 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_1218_3246Metric" V 10230 2350 50  0001 C CNN
+F 3 "~" H 10300 2350 50  0001 C CNN
+	1    10300 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 10300 2200
+Wire Wire Line
+	10450 2450 10450 2600
+Text GLabel 8500 1700 0    50   Input ~ 0
+RECEIVE1
+Text GLabel 8500 1800 0    50   Input ~ 0
+RECEIVE2
+Text GLabel 8500 2800 0    50   Input ~ 0
+SEND1
+Text GLabel 8500 2900 0    50   Input ~ 0
+SEND2
+Text GLabel 9950 2100 2    50   Input ~ 0
+HALLA
+Text GLabel 9950 2000 2    50   Input ~ 0
+HALLB
+Text GLabel 9950 1900 2    50   Input ~ 0
+HALLC
+$Comp
+L phase1:button M1
+U 1 1 5FD4927F
+P 8300 1150
+F 0 "M1" H 8350 1465 50  0000 C CNN
+F 1 "button" H 8350 1374 50  0000 C CNN
+F 2 "phase1:button" H 8150 1300 50  0001 C CNN
+F 3 "" H 8150 1300 50  0001 C CNN
+	1    8300 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8300 1900 0    50   Input ~ 0
+BUTTON
+Wire Wire Line
+	8300 1900 8500 1900
+Text GLabel 8700 1150 2    50   Input ~ 0
+BUTTON
+Wire Wire Line
+	8700 1150 8600 1150
+$Comp
+L Device:R R16
+U 1 1 5FD600E9
+P 8600 850
+F 0 "R16" H 8670 896 50  0000 L CNN
+F 1 "10k" H 8670 805 50  0000 L CNN
+F 2 "Resistor_SMD:R_1218_3246Metric" V 8530 850 50  0001 C CNN
+F 3 "~" H 8600 850 50  0001 C CNN
+	1    8600 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 700  1    50   Input ~ 0
+COM
+Wire Wire Line
+	8600 1000 8600 1150
+Connection ~ 8600 1150
+Wire Wire Line
+	8600 1150 8550 1150
+Text GLabel 8050 1150 0    50   Input ~ 0
+5V
+Wire Wire Line
+	8150 1150 8050 1150
 $EndSCHEMATC
