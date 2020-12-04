@@ -1,0 +1,1068 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L phase1:IRFZ46N Q1
+U 1 1 5FC6C33A
+P 3850 1450
+F 0 "Q1" H 4078 1496 50  0000 L CNN
+F 1 "IRFZ46N" H 4078 1405 50  0000 L CNN
+F 2 "phase1:YATIK-TO222" H 3550 2000 50  0001 C CNN
+F 3 "" H 3550 2000 50  0001 C CNN
+	1    3850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L phase1:IR2102 U1
+U 1 1 5FC6D2D0
+P 2250 1900
+F 0 "U1" H 2225 2315 50  0000 C CNN
+F 1 "IR2102" H 2225 2224 50  0000 C CNN
+F 2 "phase1:DIP-8_296_ELL" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    2250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L phase1:IRFZ46N Q2
+U 1 1 5FC6F17A
+P 3850 2400
+F 0 "Q2" H 4078 2446 50  0000 L CNN
+F 1 "IRFZ46N" H 4078 2355 50  0000 L CNN
+F 2 "phase1:YATIK-TO222" H 3550 2950 50  0001 C CNN
+F 3 "" H 3550 2950 50  0001 C CNN
+	1    3850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5FC7012C
+P 2250 1350
+F 0 "D1" H 2250 1133 50  0000 C CNN
+F 1 "D" H 2250 1224 50  0000 C CNN
+F 2 "phase1:M7" H 2250 1350 50  0001 C CNN
+F 3 "~" H 2250 1350 50  0001 C CNN
+	1    2250 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5FC70EF4
+P 3050 1800
+F 0 "C4" H 3168 1846 50  0000 L CNN
+F 1 "10uF" H 3168 1755 50  0000 L CNN
+F 2 "phase1:SMD-1210" H 3088 1650 50  0001 C CNN
+F 3 "~" H 3050 1800 50  0001 C CNN
+	1    3050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC729E2
+P 3200 1450
+F 0 "R1" V 2993 1450 50  0000 C CNN
+F 1 "5" V 3084 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3130 1450 50  0001 C CNN
+F 3 "~" H 3200 1450 50  0001 C CNN
+	1    3200 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FC72DD1
+P 3450 1650
+F 0 "R10" H 3520 1696 50  0000 L CNN
+F 1 "100k" H 3520 1605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3380 1650 50  0001 C CNN
+F 3 "~" H 3450 1650 50  0001 C CNN
+	1    3450 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1450 3450 1450
+Wire Wire Line
+	3450 1500 3450 1450
+Connection ~ 3450 1450
+Wire Wire Line
+	3450 1450 3350 1450
+Wire Wire Line
+	3950 1750 3950 1850
+Wire Wire Line
+	3950 1850 3450 1850
+Wire Wire Line
+	3450 1850 3450 1800
+Wire Wire Line
+	3050 1950 3450 1950
+Wire Wire Line
+	3450 1950 3450 1850
+Connection ~ 3450 1850
+Wire Wire Line
+	3050 1950 2550 1950
+Connection ~ 3050 1950
+Wire Wire Line
+	2550 1650 2550 1750
+Wire Wire Line
+	2700 1350 2700 1650
+Wire Wire Line
+	2550 1650 2700 1650
+Wire Wire Line
+	2400 1350 2700 1350
+Connection ~ 2700 1650
+Wire Wire Line
+	2700 1650 3050 1650
+Wire Wire Line
+	1900 1750 1750 1750
+Wire Wire Line
+	1750 1750 1750 1350
+Wire Wire Line
+	1750 1350 2100 1350
+$Comp
+L Device:C C1
+U 1 1 5FC75965
+P 1300 1950
+F 0 "C1" H 1415 1996 50  0000 L CNN
+F 1 "220nF" H 1415 1905 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 1338 1800 50  0001 C CNN
+F 3 "~" H 1300 1950 50  0001 C CNN
+	1    1300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1800 1300 1750
+Wire Wire Line
+	1300 1750 1750 1750
+Connection ~ 1750 1750
+Wire Wire Line
+	1900 2050 1600 2050
+Wire Wire Line
+	1600 2050 1600 2100
+Wire Wire Line
+	1600 2100 1300 2100
+Text GLabel 1600 2200 3    50   Input ~ 0
+COM
+Wire Wire Line
+	1600 2200 1600 2100
+Connection ~ 1600 2100
+Text GLabel 1900 1850 0    50   Input ~ 0
+~HINA
+Text GLabel 1900 1950 0    50   Input ~ 0
+~LINA
+Wire Wire Line
+	2550 1850 2850 1850
+Wire Wire Line
+	2850 1850 2850 1450
+Wire Wire Line
+	2850 1450 3050 1450
+Text GLabel 3950 950  1    50   Input ~ 0
+12V
+$Comp
+L Device:R R2
+U 1 1 5FC78D2F
+P 3200 2400
+F 0 "R2" V 2993 2400 50  0000 C CNN
+F 1 "5" V 3084 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3130 2400 50  0001 C CNN
+F 3 "~" H 3200 2400 50  0001 C CNN
+	1    3200 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FC79A2F
+P 3350 2700
+F 0 "R7" H 3420 2746 50  0000 L CNN
+F 1 "100k" H 3420 2655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3280 2700 50  0001 C CNN
+F 3 "~" H 3350 2700 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2550 3350 2400
+Wire Wire Line
+	3350 2400 3500 2400
+Connection ~ 3350 2400
+Wire Wire Line
+	3950 2700 3950 2800
+Wire Wire Line
+	3950 2900 3350 2900
+Wire Wire Line
+	3350 2900 3350 2850
+Text GLabel 3950 2900 2    50   Input ~ 0
+MOSCOM
+Text GLabel 1750 1200 1    50   Input ~ 0
+12V
+Wire Wire Line
+	1750 1200 1750 1350
+Connection ~ 1750 1350
+Wire Wire Line
+	3950 1850 3950 2000
+Connection ~ 3950 1850
+Wire Wire Line
+	3050 2400 2550 2400
+Wire Wire Line
+	2550 2400 2550 2050
+$Comp
+L phase1:IRFZ46N Q3
+U 1 1 5FC8BEC9
+P 3850 3700
+F 0 "Q3" H 4078 3746 50  0000 L CNN
+F 1 "IRFZ46N" H 4078 3655 50  0000 L CNN
+F 2 "phase1:YATIK-TO222" H 3550 4250 50  0001 C CNN
+F 3 "" H 3550 4250 50  0001 C CNN
+	1    3850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L phase1:IR2102 U2
+U 1 1 5FC8BECF
+P 2250 4150
+F 0 "U2" H 2225 4565 50  0000 C CNN
+F 1 "IR2102" H 2225 4474 50  0000 C CNN
+F 2 "phase1:DIP-8_296_ELL" H 1750 4450 50  0001 C CNN
+F 3 "" H 1750 4450 50  0001 C CNN
+	1    2250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L phase1:IRFZ46N Q4
+U 1 1 5FC8BED5
+P 3850 4650
+F 0 "Q4" H 4078 4696 50  0000 L CNN
+F 1 "IRFZ46N" H 4078 4605 50  0000 L CNN
+F 2 "phase1:YATIK-TO222" H 3550 5200 50  0001 C CNN
+F 3 "" H 3550 5200 50  0001 C CNN
+	1    3850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5FC8BEDB
+P 2250 3600
+F 0 "D2" H 2250 3383 50  0000 C CNN
+F 1 "D" H 2250 3474 50  0000 C CNN
+F 2 "phase1:M7" H 2250 3600 50  0001 C CNN
+F 3 "~" H 2250 3600 50  0001 C CNN
+	1    2250 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5FC8BEE1
+P 3050 4050
+F 0 "C5" H 3168 4096 50  0000 L CNN
+F 1 "10uF" H 3168 4005 50  0000 L CNN
+F 2 "phase1:SMD-1210" H 3088 3900 50  0001 C CNN
+F 3 "~" H 3050 4050 50  0001 C CNN
+	1    3050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FC8BEE7
+P 3200 3700
+F 0 "R3" V 2993 3700 50  0000 C CNN
+F 1 "5" V 3084 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3130 3700 50  0001 C CNN
+F 3 "~" H 3200 3700 50  0001 C CNN
+	1    3200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FC8BEED
+P 3450 3900
+F 0 "R11" H 3520 3946 50  0000 L CNN
+F 1 "100k" H 3520 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3380 3900 50  0001 C CNN
+F 3 "~" H 3450 3900 50  0001 C CNN
+	1    3450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3700 3450 3700
+Wire Wire Line
+	3450 3750 3450 3700
+Connection ~ 3450 3700
+Wire Wire Line
+	3450 3700 3350 3700
+Wire Wire Line
+	3950 4000 3950 4100
+Wire Wire Line
+	3950 4100 3450 4100
+Wire Wire Line
+	3450 4100 3450 4050
+Wire Wire Line
+	3050 4200 3450 4200
+Wire Wire Line
+	3450 4200 3450 4100
+Connection ~ 3450 4100
+Wire Wire Line
+	3050 4200 2550 4200
+Connection ~ 3050 4200
+Wire Wire Line
+	2550 3900 2550 4000
+Wire Wire Line
+	2700 3600 2700 3900
+Wire Wire Line
+	2550 3900 2700 3900
+Wire Wire Line
+	2400 3600 2700 3600
+Connection ~ 2700 3900
+Wire Wire Line
+	2700 3900 3050 3900
+Wire Wire Line
+	1900 4000 1750 4000
+Wire Wire Line
+	1750 4000 1750 3600
+Wire Wire Line
+	1750 3600 2100 3600
+$Comp
+L Device:C C2
+U 1 1 5FC8BF08
+P 1300 4200
+F 0 "C2" H 1415 4246 50  0000 L CNN
+F 1 "220nF" H 1415 4155 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 1338 4050 50  0001 C CNN
+F 3 "~" H 1300 4200 50  0001 C CNN
+	1    1300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4050 1300 4000
+Wire Wire Line
+	1300 4000 1750 4000
+Connection ~ 1750 4000
+Wire Wire Line
+	1900 4300 1600 4300
+Wire Wire Line
+	1600 4300 1600 4350
+Wire Wire Line
+	1600 4350 1300 4350
+Text GLabel 1600 4450 3    50   Input ~ 0
+COM
+Wire Wire Line
+	1600 4450 1600 4350
+Connection ~ 1600 4350
+Text GLabel 1900 4100 0    50   Input ~ 0
+~HINB
+Text GLabel 1900 4200 0    50   Input ~ 0
+~LINB
+Wire Wire Line
+	2550 4100 2850 4100
+Wire Wire Line
+	2850 4100 2850 3700
+Wire Wire Line
+	2850 3700 3050 3700
+Text GLabel 3950 3300 1    50   Input ~ 0
+12V
+$Comp
+L Device:R R4
+U 1 1 5FC8BF1D
+P 3200 4650
+F 0 "R4" V 2993 4650 50  0000 C CNN
+F 1 "5" V 3084 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3130 4650 50  0001 C CNN
+F 3 "~" H 3200 4650 50  0001 C CNN
+	1    3200 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FC8BF23
+P 3350 4950
+F 0 "R8" H 3420 4996 50  0000 L CNN
+F 1 "100k" H 3420 4905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3280 4950 50  0001 C CNN
+F 3 "~" H 3350 4950 50  0001 C CNN
+	1    3350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4800 3350 4650
+Wire Wire Line
+	3350 4650 3500 4650
+Connection ~ 3350 4650
+Wire Wire Line
+	3950 4950 3950 5000
+Wire Wire Line
+	3950 5150 3350 5150
+Wire Wire Line
+	3350 5150 3350 5100
+Text GLabel 3950 5150 2    50   Input ~ 0
+MOSCOM
+Text GLabel 1750 3450 1    50   Input ~ 0
+12V
+Wire Wire Line
+	1750 3450 1750 3600
+Connection ~ 1750 3600
+Wire Wire Line
+	3950 4100 3950 4350
+Connection ~ 3950 4100
+Wire Wire Line
+	3050 4650 2550 4650
+Wire Wire Line
+	2550 4650 2550 4300
+$Comp
+L phase1:IRFZ46N Q5
+U 1 1 5FC93314
+P 3850 5900
+F 0 "Q5" H 4078 5946 50  0000 L CNN
+F 1 "IRFZ46N" H 4078 5855 50  0000 L CNN
+F 2 "phase1:YATIK-TO222" H 3550 6450 50  0001 C CNN
+F 3 "" H 3550 6450 50  0001 C CNN
+	1    3850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L phase1:IR2102 U3
+U 1 1 5FC9331A
+P 2250 6350
+F 0 "U3" H 2225 6765 50  0000 C CNN
+F 1 "IR2102" H 2225 6674 50  0000 C CNN
+F 2 "phase1:DIP-8_296_ELL" H 1750 6650 50  0001 C CNN
+F 3 "" H 1750 6650 50  0001 C CNN
+	1    2250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L phase1:IRFZ46N Q6
+U 1 1 5FC93320
+P 3850 6850
+F 0 "Q6" H 4078 6896 50  0000 L CNN
+F 1 "IRFZ46N" H 4078 6805 50  0000 L CNN
+F 2 "phase1:YATIK-TO222" H 3550 7400 50  0001 C CNN
+F 3 "" H 3550 7400 50  0001 C CNN
+	1    3850 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5FC93326
+P 2250 5800
+F 0 "D3" H 2250 5583 50  0000 C CNN
+F 1 "D" H 2250 5674 50  0000 C CNN
+F 2 "phase1:M7" H 2250 5800 50  0001 C CNN
+F 3 "~" H 2250 5800 50  0001 C CNN
+	1    2250 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5FC9332C
+P 3050 6250
+F 0 "C6" H 3168 6296 50  0000 L CNN
+F 1 "10uF" H 3168 6205 50  0000 L CNN
+F 2 "phase1:SMD-1210" H 3088 6100 50  0001 C CNN
+F 3 "~" H 3050 6250 50  0001 C CNN
+	1    3050 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FC93332
+P 3200 5900
+F 0 "R5" V 2993 5900 50  0000 C CNN
+F 1 "5" V 3084 5900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3130 5900 50  0001 C CNN
+F 3 "~" H 3200 5900 50  0001 C CNN
+	1    3200 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5FC93338
+P 3450 6100
+F 0 "R12" H 3520 6146 50  0000 L CNN
+F 1 "100k" H 3520 6055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3380 6100 50  0001 C CNN
+F 3 "~" H 3450 6100 50  0001 C CNN
+	1    3450 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5900 3450 5900
+Wire Wire Line
+	3450 5950 3450 5900
+Connection ~ 3450 5900
+Wire Wire Line
+	3450 5900 3350 5900
+Wire Wire Line
+	3950 6200 3950 6300
+Wire Wire Line
+	3950 6300 3450 6300
+Wire Wire Line
+	3450 6300 3450 6250
+Wire Wire Line
+	3050 6400 3450 6400
+Wire Wire Line
+	3450 6400 3450 6300
+Connection ~ 3450 6300
+Wire Wire Line
+	3050 6400 2550 6400
+Connection ~ 3050 6400
+Wire Wire Line
+	2550 6100 2550 6200
+Wire Wire Line
+	2700 5800 2700 6100
+Wire Wire Line
+	2550 6100 2700 6100
+Wire Wire Line
+	2400 5800 2700 5800
+Connection ~ 2700 6100
+Wire Wire Line
+	2700 6100 3050 6100
+Wire Wire Line
+	1900 6200 1750 6200
+Wire Wire Line
+	1750 6200 1750 5800
+Wire Wire Line
+	1750 5800 2100 5800
+$Comp
+L Device:C C3
+U 1 1 5FC93353
+P 1300 6400
+F 0 "C3" H 1415 6446 50  0000 L CNN
+F 1 "220nF" H 1415 6355 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 1338 6250 50  0001 C CNN
+F 3 "~" H 1300 6400 50  0001 C CNN
+	1    1300 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6250 1300 6200
+Wire Wire Line
+	1300 6200 1750 6200
+Connection ~ 1750 6200
+Wire Wire Line
+	1900 6500 1600 6500
+Wire Wire Line
+	1600 6500 1600 6550
+Wire Wire Line
+	1600 6550 1300 6550
+Text GLabel 1600 6650 3    50   Input ~ 0
+COM
+Wire Wire Line
+	1600 6650 1600 6550
+Connection ~ 1600 6550
+Text GLabel 1900 6400 0    50   Input ~ 0
+~LINC
+Wire Wire Line
+	2550 6300 2850 6300
+Wire Wire Line
+	2850 6300 2850 5900
+Wire Wire Line
+	2850 5900 3050 5900
+Text GLabel 3950 5500 1    50   Input ~ 0
+12V
+$Comp
+L Device:R R6
+U 1 1 5FC93368
+P 3200 6850
+F 0 "R6" V 2993 6850 50  0000 C CNN
+F 1 "5" V 3084 6850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3130 6850 50  0001 C CNN
+F 3 "~" H 3200 6850 50  0001 C CNN
+	1    3200 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FC9336E
+P 3350 7150
+F 0 "R9" H 3420 7196 50  0000 L CNN
+F 1 "100k" H 3420 7105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3280 7150 50  0001 C CNN
+F 3 "~" H 3350 7150 50  0001 C CNN
+	1    3350 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 7000 3350 6850
+Wire Wire Line
+	3350 6850 3500 6850
+Connection ~ 3350 6850
+Wire Wire Line
+	3950 7150 3950 7200
+Wire Wire Line
+	3950 7350 3350 7350
+Wire Wire Line
+	3350 7350 3350 7300
+Text GLabel 3950 7350 2    50   Input ~ 0
+MOSCOM
+Text GLabel 1750 5650 1    50   Input ~ 0
+12V
+Wire Wire Line
+	1750 5650 1750 5800
+Connection ~ 1750 5800
+Connection ~ 3950 6300
+Wire Wire Line
+	3050 6850 2550 6850
+Wire Wire Line
+	2550 6850 2550 6500
+Text GLabel 4550 2000 2    50   Input ~ 0
+PHASEA
+Text GLabel 4750 4100 2    50   Input ~ 0
+PHASEB
+Text GLabel 4750 6300 2    50   Input ~ 0
+PHASEC
+Text GLabel 1900 6300 0    50   Input ~ 0
+~HINC
+$Comp
+L phase1:Atmega328P U6
+U 1 1 5FCA2204
+P 9200 2250
+F 0 "U6" H 9225 3165 50  0000 C CNN
+F 1 "Atmega328P" H 9225 3074 50  0000 C CNN
+F 2 "phase1:DIP-28_296_ELL" H 8500 3250 50  0001 C CNN
+F 3 "" H 8500 3250 50  0001 C CNN
+	1    9200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L phase1:ACS712 U4
+U 1 1 5FCBE8B5
+P 5450 2600
+F 0 "U4" H 5450 3015 50  0000 C CNN
+F 1 "ACS712" H 5450 2924 50  0000 C CNN
+F 2 "phase1:SOIC-8" H 5150 2950 50  0001 C CNN
+F 3 "" H 5150 2950 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5FCBF4CB
+P 6300 2450
+F 0 "C9" V 6552 2450 50  0000 C CNN
+F 1 "0.1uF" V 6461 2450 50  0000 C CNN
+F 2 "phase1:3mm- circle" H 6338 2300 50  0001 C CNN
+F 3 "~" H 6300 2450 50  0001 C CNN
+	1    6300 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5FCBFC09
+P 6300 2750
+F 0 "C10" H 6415 2796 50  0000 L CNN
+F 1 "1nF" H 6415 2705 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 6338 2600 50  0001 C CNN
+F 3 "~" H 6300 2750 50  0001 C CNN
+	1    6300 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 2550 2    50   Input ~ 0
+CURRENT
+Wire Wire Line
+	5750 2750 5750 2900
+Wire Wire Line
+	6150 2450 5750 2450
+Wire Wire Line
+	6450 2450 6550 2450
+Wire Wire Line
+	6550 2450 6550 3000
+Wire Wire Line
+	6550 3000 5750 3000
+Wire Wire Line
+	5750 3000 5750 2900
+Connection ~ 5750 2900
+Wire Wire Line
+	5150 2650 5150 2750
+Wire Wire Line
+	5150 2750 5150 3000
+Wire Wire Line
+	5150 3000 5750 3000
+Connection ~ 5150 2750
+Connection ~ 5750 3000
+Wire Wire Line
+	5750 3000 5750 3250
+Wire Wire Line
+	5750 2900 6300 2900
+Wire Wire Line
+	6300 2600 6200 2600
+Wire Wire Line
+	6200 2600 6200 2650
+Wire Wire Line
+	6200 2650 5750 2650
+Text GLabel 5750 3250 3    50   Input ~ 0
+COM
+Text GLabel 5000 2400 0    50   Input ~ 0
+MOSCOM
+Wire Wire Line
+	5000 2400 5150 2400
+Wire Wire Line
+	5150 2400 5150 2450
+Wire Wire Line
+	5150 2450 5150 2550
+Connection ~ 5150 2450
+$Comp
+L Device:Crystal Y1
+U 1 1 5FD0DF7E
+P 7450 2500
+F 0 "Y1" V 7496 2369 50  0000 R CNN
+F 1 "Crystal" V 7405 2369 50  0000 R CNN
+F 2 "Crystal:Crystal_HC52-6mm_Vertical" H 7450 2500 50  0001 C CNN
+F 3 "~" H 7450 2500 50  0001 C CNN
+	1    7450 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2400 7700 2350
+Wire Wire Line
+	7700 2350 7450 2350
+Wire Wire Line
+	7750 2500 7750 2650
+Wire Wire Line
+	7750 2650 7450 2650
+$Comp
+L Device:C C12
+U 1 1 5FD19A5C
+P 7100 2400
+F 0 "C12" H 7215 2446 50  0000 L CNN
+F 1 "22pF" H 7215 2355 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 7138 2250 50  0001 C CNN
+F 3 "~" H 7100 2400 50  0001 C CNN
+	1    7100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5FD1A623
+P 7100 2700
+F 0 "C13" H 7215 2746 50  0000 L CNN
+F 1 "22pF" H 7215 2655 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 7138 2550 50  0001 C CNN
+F 3 "~" H 7100 2700 50  0001 C CNN
+	1    7100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2650 7450 2850
+Wire Wire Line
+	7450 2850 7100 2850
+Connection ~ 7450 2650
+Wire Wire Line
+	7100 2250 7450 2250
+Wire Wire Line
+	7450 2250 7450 2350
+Connection ~ 7450 2350
+Wire Wire Line
+	7550 2300 7550 2200
+Wire Wire Line
+	7550 2200 7150 2200
+Wire Wire Line
+	6950 2200 6950 2550
+Wire Wire Line
+	6950 2550 7100 2550
+Connection ~ 7100 2550
+Text GLabel 7550 2100 0    50   Input ~ 0
+5V
+$Comp
+L Device:CP C15
+U 1 1 5FD2B9D7
+P 7650 1950
+F 0 "C15" H 7532 1904 50  0000 R CNN
+F 1 "10uF" H 7532 1995 50  0000 R CNN
+F 2 "phase1:SMD-1210" H 7688 1800 50  0001 C CNN
+F 3 "~" H 7650 1950 50  0001 C CNN
+	1    7650 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 2100 7650 2100
+Wire Wire Line
+	7650 2100 7650 2200
+Connection ~ 7650 2100
+Wire Wire Line
+	7650 1800 7150 1800
+Wire Wire Line
+	7150 1800 7150 2200
+Connection ~ 7150 2200
+Wire Wire Line
+	7150 2200 6950 2200
+Text GLabel 7250 1800 1    50   Input ~ 0
+COM
+Text GLabel 6550 700  1    50   Input ~ 0
+12V
+Text GLabel 6550 1000 3    50   Input ~ 0
+MOSCOM
+$Comp
+L Device:CP C11
+U 1 1 5FD3FDF7
+P 6900 850
+F 0 "C11" H 7018 896 50  0000 L CNN
+F 1 "1000uF" H 7018 805 50  0000 L CNN
+F 2 "phase1:10mm circle" H 6938 700 50  0001 C CNN
+F 3 "~" H 6900 850 50  0001 C CNN
+	1    6900 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 700  6900 700 
+Wire Wire Line
+	6900 700  6550 700 
+Connection ~ 6900 700 
+Wire Wire Line
+	6550 1000 6900 1000
+Wire Wire Line
+	6900 1000 7400 1000
+Connection ~ 6900 1000
+$Comp
+L phase1:7805 U5
+U 1 1 5FC84880
+P 5500 900
+F 0 "U5" H 5778 888 50  0000 L CNN
+F 1 "7805" H 5778 797 50  0000 L CNN
+F 2 "phase1:YATIK-TO222" H 5350 700 50  0001 C CNN
+F 3 "" H 5350 700 50  0001 C CNN
+	1    5500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 5FC86299
+P 5650 1500
+F 0 "C8" H 5700 1600 50  0000 L CNN
+F 1 "0.1uF" H 5700 1400 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 5688 1350 50  0001 C CNN
+F 3 "~" H 5650 1500 50  0001 C CNN
+	1    5650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C7
+U 1 1 5FC87231
+P 5350 1500
+F 0 "C7" H 5400 1600 50  0000 L CNN
+F 1 "0.33uF" H 5050 1400 50  0000 L CNN
+F 2 "phase1:3mm- circle" H 5388 1350 50  0001 C CNN
+F 3 "~" H 5350 1500 50  0001 C CNN
+	1    5350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1200 5350 1300
+Wire Wire Line
+	5500 1200 5500 1700
+Wire Wire Line
+	5500 1700 5350 1700
+Wire Wire Line
+	5350 1700 5350 1650
+Wire Wire Line
+	5500 1700 5650 1700
+Wire Wire Line
+	5650 1700 5650 1650
+Connection ~ 5500 1700
+Wire Wire Line
+	5650 1350 5650 1200
+Text GLabel 5500 1800 3    50   Input ~ 0
+COM
+Wire Wire Line
+	5500 1800 5500 1700
+Text GLabel 5150 1300 0    50   Input ~ 0
+12V
+Wire Wire Line
+	5150 1300 5350 1300
+Connection ~ 5350 1300
+Wire Wire Line
+	5350 1300 5350 1350
+$Comp
+L Device:R R13
+U 1 1 5FCB225F
+P 8300 1600
+F 0 "R13" V 8093 1600 50  0000 C CNN
+F 1 "10k" V 8184 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8230 1600 50  0001 C CNN
+F 3 "~" H 8300 1600 50  0001 C CNN
+	1    8300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 1600 8450 1600
+Text GLabel 8050 1600 0    50   Input ~ 0
+5V
+Wire Wire Line
+	8150 1600 8050 1600
+Wire Wire Line
+	7650 2200 8500 2200
+Wire Wire Line
+	7550 2300 8500 2300
+Wire Wire Line
+	7700 2400 8500 2400
+Wire Wire Line
+	7750 2500 8500 2500
+Wire Wire Line
+	3950 950  3950 1150
+$Comp
+L Device:D D4
+U 1 1 5FD089C0
+P 4450 1500
+F 0 "D4" V 4404 1580 50  0000 L CNN
+F 1 "D" V 4495 1580 50  0000 L CNN
+F 2 "phase1:DIODE-6A" H 4450 1500 50  0001 C CNN
+F 3 "~" H 4450 1500 50  0001 C CNN
+	1    4450 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5FD0927A
+P 4450 2400
+F 0 "D5" V 4404 2480 50  0000 L CNN
+F 1 "D" V 4495 2480 50  0000 L CNN
+F 2 "phase1:DIODE-6A" H 4450 2400 50  0001 C CNN
+F 3 "~" H 4450 2400 50  0001 C CNN
+	1    4450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1350 4450 1150
+Wire Wire Line
+	4450 1150 3950 1150
+Connection ~ 3950 1150
+Wire Wire Line
+	4450 1650 4450 2000
+Wire Wire Line
+	4450 2000 3950 2000
+Connection ~ 3950 2000
+Wire Wire Line
+	3950 2000 3950 2100
+Wire Wire Line
+	4450 2250 4450 2000
+Connection ~ 4450 2000
+Wire Wire Line
+	4450 2550 4450 2800
+Wire Wire Line
+	4450 2800 3950 2800
+Connection ~ 3950 2800
+Wire Wire Line
+	3950 2800 3950 2900
+Wire Wire Line
+	4550 2000 4450 2000
+Wire Wire Line
+	3950 3300 3950 3350
+Wire Wire Line
+	3950 5500 3950 5550
+Wire Wire Line
+	3950 6300 3950 6550
+$Comp
+L Device:D D6
+U 1 1 5FD3AACF
+P 4500 3700
+F 0 "D6" V 4454 3780 50  0000 L CNN
+F 1 "D" V 4545 3780 50  0000 L CNN
+F 2 "phase1:DIODE-6A" H 4500 3700 50  0001 C CNN
+F 3 "~" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5FD3B7C9
+P 4500 4650
+F 0 "D7" V 4454 4730 50  0000 L CNN
+F 1 "D" V 4545 4730 50  0000 L CNN
+F 2 "phase1:DIODE-6A" H 4500 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4500 4500 4100
+Wire Wire Line
+	4500 3550 4500 3350
+Wire Wire Line
+	4500 3350 3950 3350
+Connection ~ 3950 3350
+Wire Wire Line
+	3950 3350 3950 3400
+Wire Wire Line
+	3950 4100 4500 4100
+Connection ~ 4500 4100
+Wire Wire Line
+	4500 4100 4500 3850
+Wire Wire Line
+	4500 4800 4500 5000
+Wire Wire Line
+	4500 5000 3950 5000
+Connection ~ 3950 5000
+Wire Wire Line
+	3950 5000 3950 5150
+Wire Wire Line
+	4750 4100 4500 4100
+$Comp
+L Device:D D8
+U 1 1 5FD6AB74
+P 4500 5900
+F 0 "D8" V 4454 5980 50  0000 L CNN
+F 1 "D" V 4545 5980 50  0000 L CNN
+F 2 "phase1:DIODE-6A" H 4500 5900 50  0001 C CNN
+F 3 "~" H 4500 5900 50  0001 C CNN
+	1    4500 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5FD6B66F
+P 4500 6850
+F 0 "D9" V 4454 6930 50  0000 L CNN
+F 1 "D" V 4545 6930 50  0000 L CNN
+F 2 "phase1:DIODE-6A" H 4500 6850 50  0001 C CNN
+F 3 "~" H 4500 6850 50  0001 C CNN
+	1    4500 6850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 5750 4500 5550
+Wire Wire Line
+	4500 5550 3950 5550
+Connection ~ 3950 5550
+Wire Wire Line
+	3950 5550 3950 5600
+Wire Wire Line
+	4500 7200 3950 7200
+Wire Wire Line
+	4500 7000 4500 7200
+Connection ~ 3950 7200
+Wire Wire Line
+	3950 7200 3950 7350
+Wire Wire Line
+	3950 6300 4500 6300
+Wire Wire Line
+	4500 6050 4500 6300
+Connection ~ 4500 6300
+Wire Wire Line
+	4500 6300 4500 6700
+Wire Wire Line
+	4750 6300 4500 6300
+$Comp
+L Device:CP C14
+U 1 1 5FDBB621
+P 7400 850
+F 0 "C14" H 7518 896 50  0000 L CNN
+F 1 "1000uF" H 7518 805 50  0000 L CNN
+F 2 "phase1:10mm circle" H 7438 700 50  0001 C CNN
+F 3 "~" H 7400 850 50  0001 C CNN
+	1    7400 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 7050 4250 0    50   Input ~ 0
+MOSCOM
+Text GLabel 7250 4250 2    50   Input ~ 0
+COM
+Wire Wire Line
+	7250 4250 7050 4250
+$EndSCHEMATC
